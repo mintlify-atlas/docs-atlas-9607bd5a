@@ -1,0 +1,60 @@
+{
+  "projectType": "saas",
+  "projectName": "Deconstructor",
+  "projectDescription": "A beautiful and interactive web application that deconstructs words into their meaningful parts and explains their etymology using AI-powered analysis and visual graphs.",
+  "theme": "willow",
+  "primaryColor": "#8c949c",
+  "lightColor": "#1e2c35",
+  "darkColor": "#cccdd2",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": [
+          "introduction",
+          "quickstart"
+        ]
+      },
+      {
+        "group": "Core Features",
+        "pages": [
+          "features/word-deconstruction",
+          "features/visual-graph",
+          "features/etymology-breakdown"
+        ]
+      },
+      {
+        "group": "Technical",
+        "pages": [
+          "technical/architecture",
+          "technical/ai-models",
+          "technical/api-reference",
+          "technical/data-schema"
+        ]
+      },
+      {
+        "group": "Development",
+        "pages": [
+          "development/setup",
+          "development/configuration",
+          "development/deployment"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Interactive word analysis with AI-powered etymology breakdown",
+    "Beautiful React Flow visualization of word components and their relationships",
+    "Support for multiple AI models (Anthropic Claude, OpenAI, Google Gemini)",
+    "Real-time graph visualization with progressive word combination layers",
+    "Dark mode support with elegant UI",
+    "ISR caching and pre-generation for top 1000 common words"
+  ],
+  "publicApiSurface": [
+    "POST /api - Word deconstruction endpoint with structured AI response",
+    "GET /w/[word] - Dynamic word page with ISR caching",
+    "WordDeconstructor component - Main interactive UI component",
+    "wordSchema - Zod schema for word structure validation",
+    "React Flow custom nodes: WordChunkNode, OriginNode, CombinedNode"
+  ]
+}
